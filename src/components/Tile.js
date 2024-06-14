@@ -19,7 +19,6 @@ function Tile({ name, img, specialty, weight, greased, medal, className }) {
           <p>Highest Medal Achieved: {medal}</p>
         </div>
       )}
-
     </div>
   )
 }
