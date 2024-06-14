@@ -1,16 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-function Tile({ name, img, onClick, specialty, weight, greased, medal, className }) {
+function Tile({ name, img, specialty, weight, greased, medal, className }) {
   //Set individual state
   //Onclick to change state
+  //handle click to toggle
+  const [selectedHog, setSelectedHog] = useState(false)
 
+  function handleClick() {
+    setSelectedHog(!selectedHog)
+  }
 
   return (
-    <div className={className} onClick={onClick}>
+    <div className={className} onClick={handleClick}>
       <h3>{name}</h3>
       <img src={img} alt={name} />
-
-      {specialty &&(
+      {selectedHog &&(
         <div>
           <p>Specialty: {specialty}</p>
           <p>Weight: {weight}</p>

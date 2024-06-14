@@ -18,11 +18,6 @@ function PigList({ hogs, allHogs }) {
 
 
   function handleClick(hog) {
-    console.log(`
-    ${hog.name},
-    ${hog.specialty}
-    ${hog.greased}
-    `)
     setSelectedHog(selectedHog === hog ? null : hog)
   }
 

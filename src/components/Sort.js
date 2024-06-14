@@ -4,8 +4,6 @@ function Sort({ allHogs, setAllHogs, hogs }) {
   const [sortButtonName, setSortButtonName] = useState('Sort By Name: ON')
   const [sortButtonWeight, setSortButtonWeight] = useState('Sort By Weight: ON')
 
-
-
   const sortedHogs = allHogs.toSorted((a, b) => {
     const hogA = a.name
     const hogB = b.name
@@ -29,18 +27,17 @@ function Sort({ allHogs, setAllHogs, hogs }) {
     }
   }
 
-
   const sortedHogsWeight = allHogs.toSorted((a, b) => {
     const hogA = a.weight
     const hogB = b.weight
     if (hogA < hogB) {
-      return -1;
+      return -1
     }
     if (hogA > hogB) {
-      return 1;
+      return 1
     }
 
-    return 0;
+    return 0
   })
 
   const handleWeightClick = () => {
@@ -52,7 +49,6 @@ function Sort({ allHogs, setAllHogs, hogs }) {
       setSortButtonWeight('Sort By Weight: ON')
     }
   }
-
 
   return (
     <>
