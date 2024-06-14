@@ -1,9 +1,6 @@
 import React, { useState } from 'react'
 
 function Tile({ name, img, specialty, weight, greased, medal, className }) {
-  //Set individual state
-  //Onclick to change state
-  //handle click to toggle
   const [selectedHog, setSelectedHog] = useState(false)
 
   function handleClick() {

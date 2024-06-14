@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 function Filter({ allHogs, setAllHogs, hogs }) {
-  const [buttonText, setButtonText] = useState('Greased Hogs: ON');
+  const [buttonText, setButtonText] = useState('Greased Hogs: ON')
 
   const handleClick = () => {
     const greasedHogs = allHogs.filter((hog) => hog.greased === true)

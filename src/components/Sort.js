@@ -8,13 +8,12 @@ function Sort({ allHogs, setAllHogs, hogs }) {
     const hogA = a.name
     const hogB = b.name
     if (hogA < hogB) {
-      return -1;
+      return -1
     }
     if (hogA > hogB) {
-      return 1;
+      return 1
     }
-
-    return 0;
+    return 0
   })
 
   const handleNameClick = () => {
@@ -36,7 +35,6 @@ function Sort({ allHogs, setAllHogs, hogs }) {
     if (hogA > hogB) {
       return 1
     }
-
     return 0
   })
 
